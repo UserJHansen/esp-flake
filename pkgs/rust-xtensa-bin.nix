@@ -30,11 +30,11 @@
     srcs = {
       rustc = fetchurl {
         url = "https://github.com/esp-rs/rust-build/releases/download/v${version}/rust-${version}-x86_64-unknown-linux-gnu.tar.xz";
-        hash = "sha256-TtenQD6eIHfbfP6oc0qOWtCWmfivOiS7IAda5bIcwAQ=";
+        hash = "sha256-W2XeX5SLAxyfX6X+vUygPl1ChZPiNGWRyG02vm7+xsQ=";
       };
       rust-src = fetchurl {
         url = "https://github.com/esp-rs/rust-build/releases/download/v${version}/rust-src-${version}.tar.xz";
-        hash = "sha256-BCp0cztjZxRAPlpz2SYwNGSi7n4U9s2+QDDXIdGFx+c=";
+        hash = "sha256-FYWHR6kv+r9QN2tPkBJ5GcZupA6XSPMRJbxoGRhWRLA=";
       };
     };
   };
