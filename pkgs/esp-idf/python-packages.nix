@@ -16,6 +16,7 @@ with pythonPackages; rec {
     pyproject = true;
     build-system = [
       setuptools
+      poetry-core
     ];
 
     src = fetchFromGitHub {
