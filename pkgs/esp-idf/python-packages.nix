@@ -192,6 +192,7 @@ with pythonPackages; rec {
 
     propagatedBuildInputs = [
       pyyaml
+      rich
     ];
 
     meta = {
