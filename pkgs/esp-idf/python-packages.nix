@@ -92,6 +92,8 @@ with pythonPackages; rec {
     pname = "esptool";
     version = "4.8.1";
 
+    format = "pyproject";
+
     src = fetchPypi {
       inherit pname version;
       sha256 = "sha256-3E7ya2WeGo3LAZFHwOptlJgLNN6Z++CRIceUHIslRTE=";
@@ -151,6 +153,7 @@ with pythonPackages; rec {
       sha256 = "sha256-c62X3ZHRShhbAFmuPc/d2keqE9T9SXYIlJTyn32LPaE=";
     };
 
+    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -173,6 +176,7 @@ with pythonPackages; rec {
       sha256 = "sha256-Oki21JiHiS7PzfIj/uQXSjc1KArRKBEDDLRvpQqBI/o=";
     };
 
+    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -193,6 +197,7 @@ with pythonPackages; rec {
       sha256 = "sha256-o0ZoTy7OLVnrhSepya+MwaILgJSojs2hfmI86D9C3cs=";
     };
 
+    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -255,6 +260,8 @@ with pythonPackages; rec {
   pyclang = buildPythonPackage rec {
     pname = "pyclang";
     version = "0.6.0";
+
+    format = "pyproject";
 
     src = fetchPypi {
       inherit pname version;
