@@ -13,7 +13,7 @@ with pythonPackages; rec {
     pname = "idf-component-manager";
     version = "1.3.2";
 
-    pyproject = true
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "espressif";
