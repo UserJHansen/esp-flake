@@ -92,7 +92,10 @@ with pythonPackages; rec {
     pname = "esptool";
     version = "4.8.1";
 
-    format = "pyproject";
+    pyproject = true;
+    build-system = [
+      setuptools
+    ];
 
     src = fetchPypi {
       inherit pname version;
@@ -148,12 +151,16 @@ with pythonPackages; rec {
     pname = "esp-idf-monitor";
     version = "1.1.1";
 
+    pyproject = true;
+    build-system = [
+      setuptools
+    ];
+
     src = fetchPypi {
       inherit pname version;
       sha256 = "sha256-c62X3ZHRShhbAFmuPc/d2keqE9T9SXYIlJTyn32LPaE=";
     };
 
-    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -171,12 +178,16 @@ with pythonPackages; rec {
     pname = "esp-idf-size";
     version = "1.6.1";
 
+    pyproject = true;
+    build-system = [
+      setuptools
+    ];
+
     src = fetchPypi {
       inherit pname version;
       sha256 = "sha256-Oki21JiHiS7PzfIj/uQXSjc1KArRKBEDDLRvpQqBI/o=";
     };
 
-    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -192,12 +203,16 @@ with pythonPackages; rec {
     pname = "freertos-gdb";
     version = "1.0.2";
 
+    pyproject = true;
+    build-system = [
+      setuptools
+    ];
+
     src = fetchPypi {
       inherit pname version;
       sha256 = "sha256-o0ZoTy7OLVnrhSepya+MwaILgJSojs2hfmI86D9C3cs=";
     };
 
-    format = "pyproject";
     doCheck = false;
 
     propagatedBuildInputs = [
@@ -261,7 +276,10 @@ with pythonPackages; rec {
     pname = "pyclang";
     version = "0.6.0";
 
-    format = "pyproject";
+    pyproject = true;
+    build-system = [
+      setuptools
+    ];
 
     src = fetchPypi {
       inherit pname version;
