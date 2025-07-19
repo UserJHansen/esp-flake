@@ -111,6 +111,8 @@ with pythonPackages; rec {
       pyserial
       reedsolo
       pyyaml
+      intelhex
+      argcomplete
     ];
 
     meta = {
